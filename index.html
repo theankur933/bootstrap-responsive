@@ -36,7 +36,7 @@
   </head>
   <body>
     <!-- Header and Banner section starts here -->
-    <header>
+    <header id="home">
       <nav
         class="navbar navbar-expand-lg navbar-light bg-white px-4 border-bottom fixed-top"
       >
@@ -61,17 +61,17 @@
                 <a
                   class="nav-link active text-primary"
                   aria-current="page"
-                  href="#"
+                  href="#home"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="#services"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -89,10 +89,10 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Our Team</a>
+                <a class="nav-link" href="#team">Our Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -177,7 +177,7 @@
     <!-- Header and Banner section ends here -->
 
     <!-- About section starts here -->
-    <section class="about my-5">
+    <section class="about my-5" id="about">
       <div class="container">
         <div class="text-center my-5">
           <h1>About <span class="text-primary"> me</span></h1>
@@ -297,15 +297,14 @@
     <!-- About section ends here -->
 
     <!-- Services section starts here -->
-    <section class="services py-5 bg-light">
+    <section class="services py-5 bg-light" id="services">
       <div class="container">
         <div class="text-center my-5">
           <h1 data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">Our <span class="text-primary"> services</span></h1>
           <hr / class="w-25 m-auto">
         </div>
-        <div class="row" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">
+        <div class="row" data-aos="zoom-in-up" data-aos-offset="200">
           <div class="col-sm-12 col-md-4 col-lg-4 col-12">
             <div class="card">
               <div class="card-body">
@@ -351,8 +350,7 @@
           </div>
         </div>
 
-        <div class="row mt-5" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">
+        <div class="row mt-5" data-aos="zoom-in-down" data-aos-offset="200">
           <div class="col-sm-12 col-md-4 col-lg-4 col-12">
             <div class="card">
               <div class="card-body">
@@ -402,17 +400,16 @@
     <!-- Services section ends here -->
 
     <!-- Teams section starts here -->
-    <section class="team my-5 text-center">
+    <section class="team my-5 text-center" id="team">
       <div class="container">
         <div class="text-center my-5">
           <h1 data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">Our <span class="text-primary"> Team</span></h1>
           <hr / class="w-25 m-auto">
         </div>
-        <div class="row" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">
+        <div class="row">
           <div class="col-sm-12 col-md-4 col-lg-4 col-12">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-up">
               <div class="card-body">
                 <img
                   src="images/s2.jpg"
@@ -429,7 +426,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-4 col-lg-4 col-12">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-down">
               <div class="card-body">
                 <img
                   src="images/s3.jpg"
@@ -446,7 +443,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-4 col-lg-4 col-12">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-left">
               <div class="card-body">
                 <img
                   src="images/s4.jpg"
@@ -468,7 +465,7 @@
     <!-- Teams section ends here -->
 
     <!-- Footer section starts here -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="text-center my-5">
           <h1 data-aos="fade-up"
@@ -477,7 +474,8 @@
         </div>
         <div class="row" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">
-          <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
             <form class="row g-3">
               <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Email</label>
